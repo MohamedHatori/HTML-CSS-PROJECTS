@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Login Form</title>
+    <title>Navigation Sliding Indicator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,35 +15,37 @@
 
     <div class="container">
 
-        <form action="#">
+        <input type="radio" name="slider" id="home" checked>
+        <input type="radio" name="slider" id="blog">
+        <input type="radio" name="slider" id="code">
+        <input type="radio" name="slider" id="help">
+        <input type="radio" name="slider" id="user">
 
-            <div class="title">Login</div>
+        <nav>
 
-            <div class="input-box">
-                <input type="email" placeholder="Enter Your Email" required>
-                <div class="underline"></div>
-            </div>
+            <div class="slider"></div>
 
-            <div class="input-box">
-                <input type="password" placeholder="Enter Your Password" required>
-                <div class="underline"></div>
-            </div>
+            <label for="home" class="home">
+                <i class="fa-solid fa-house-chimney"></i><span>Home</span>
+            </label>
 
-            <div class="input-box button">
-                <input type="submit" value="Continue">
-            </div>
+            <label for="blog" class="blog">
+                <i class="fa-solid fa-blog"></i><span>Blog</span>
+            </label>
 
-        </form>
+            <label for="code" class="code">
+                <i class="fa-solid fa-code"></i><span>Code</span>
+            </label>
 
-        <div class="option">or Connect with Social Media</div>
+            <label for="help" class="help">
+                <i class="fa-solid fa-envelope"></i><span>Help</span>
+            </label>
 
-        <div class="twitter">
-            <a href="#"><i class="fa-brands fa-twitter"></i>Login with Twitter</a>
-        </div>
+            <label for="user" class="user">
+                <i class="fa-solid fa-user"></i><span>About</span>
+            </label>
 
-        <div class="facebook">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i>Login with Facebook</a>
-        </div>
+        </nav>
 
     </div>
 
